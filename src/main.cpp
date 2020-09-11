@@ -11,7 +11,7 @@
 #endif
 
 static const int clkSpd = 500000;
-SPIClass *vspi = NULL;
+SPIClass *vspi = nullptr;
 
 uint16_t reading;
 
@@ -42,7 +42,8 @@ void setup()
   digitalWrite(CE1_PIN, HIGH);
   digitalWrite(CE0_PIN, HIGH);
 
-  WiFi.disconnect(true, true);
+  // WiFi Stuff
+  WiFi.disconnect(true, true); // clear prev credentials
   delay(2000);
   WiFi.mode(WIFI_AP);
   WiFi.softAP(ssid, password);
