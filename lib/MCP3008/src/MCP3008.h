@@ -1,3 +1,6 @@
+#ifndef MCP3008_H
+#define MCP3008_H
+
 #include <Arduino.h>
 #include <SPI.h>
 
@@ -15,3 +18,5 @@ public:
     uint16_t readADC(uint8_t channel);
     ~MCP3008();
 };
+
+#endif
