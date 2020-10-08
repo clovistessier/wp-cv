@@ -19,7 +19,7 @@ const IPAddress subnet(255, 255, 255, 0);
 uint8_t mac[] = {
     0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};
 
-static const std::vector<String> params = {
+static const String params[] = {
     "lum", "mix", "hue", "sat", "x", "y", "z", "rot",
     "bri", "flt", "res", "con", "hmod", "hoff", "hlfo", "del"};
 
@@ -144,10 +144,6 @@ void TaskOscWiFi(void *pvParameters)
       bundler.end_bundle();
       bundler.send(host, send_port);
     }
-    // else
-    // {
-    //   Serial.println("Didn't receive from the queue in time");
-    // }
 
     //stack monitoring
     stackHighwater = min(stackHighwater, uxTaskGetStackHighWaterMark(NULL));
