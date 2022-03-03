@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Connector_Audio_Extra)(type KiCad)(uri "${KIPRJMOD}/Project Footprints/Connector_Audio.pretty")(options "")(descr ""))
+  (lib (name Potentiometer_THT_Extra)(type KiCad)(uri "${KIPRJMOD}/Project Footprints/Potentiometer_THT.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,84 @@
+EESchema Schematic File Version 4
+LIBS:Wave_Pool CV Input Rev C-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4900 2450 850  850 
+U 606BEB7D
+F0 "CV_INPUTS_TOP_ROW" 50
+F1 "file5FDCE2F1.sch" 50
+F2 "MUX_ADDR_3" I L 4900 2500 50 
+F3 "MUX_ADDR_0" I L 4900 2800 50 
+F4 "MUX_ADDR_1" I L 4900 2700 50 
+F5 "MUX_ADDR_2" I L 4900 2600 50 
+F6 "CV_IN_MUXED" O R 5750 2950 50 
+$EndSheet
+$Sheet
+S 4900 3800 850  850 
+U 606C6F2E
+F0 "CV_INPUTS_BOTTOM_ROW" 50
+F1 "file5FDD8FDD.sch" 50
+F2 "MUX_ADDR_3n" I L 4900 3850 50 
+F3 "MUX_ADDR_0" I L 4900 4150 50 
+F4 "MUX_ADDR_1" I L 4900 4050 50 
+F5 "MUX_ADDR_2" I L 4900 3950 50 
+F6 "CV_IN_MUXED" O R 5750 4350 50 
+$EndSheet
+Text HLabel 4750 2500 0    50   Input ~ 0
+MUX_ADDR_3
+Text HLabel 4750 2800 0    50   Input ~ 0
+MUX_ADDR_0
+Text HLabel 4750 2700 0    50   Input ~ 0
+MUX_ADDR_1
+Text HLabel 4750 2600 0    50   Input ~ 0
+MUX_ADDR_2
+Text HLabel 4750 3850 0    50   Input ~ 0
+MUX_ADDR_3n
+Text HLabel 4750 4150 0    50   Input ~ 0
+MUX_ADDR_0
+Text HLabel 4750 4050 0    50   Input ~ 0
+MUX_ADDR_1
+Text HLabel 4750 3950 0    50   Input ~ 0
+MUX_ADDR_2
+Text HLabel 6350 3600 2    50   Output ~ 0
+CV_IN_MUXED
+Wire Wire Line
+	4900 2500 4750 2500
+Wire Wire Line
+	4900 2800 4750 2800
+Wire Wire Line
+	4900 2600 4750 2600
+Wire Wire Line
+	4900 2700 4750 2700
+Wire Wire Line
+	4750 3850 4900 3850
+Wire Wire Line
+	4750 3950 4900 3950
+Wire Wire Line
+	4750 4050 4900 4050
+Wire Wire Line
+	4750 4150 4900 4150
+Wire Wire Line
+	6150 2950 6150 3600
+Wire Wire Line
+	5750 2950 6150 2950
+Wire Wire Line
+	5750 4350 6150 4350
+Wire Wire Line
+	6150 3600 6350 3600
+Connection ~ 6150 3600
+Wire Wire Line
+	6150 3600 6150 4350
+$EndSCHEMATC

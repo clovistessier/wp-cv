@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Thonkiconn_Mono)(type Legacy)(uri "${KIPRJMOD}/Project Symbols/thonkiconn_jackSocket_fuzzySi.lib")(options "")(descr ""))
+  (lib (name mcp3008_modified)(type Legacy)(uri "${KIPRJMOD}/Project Symbols/mcp3008_modified.lib")(options "")(descr ""))
+  (lib (name Wave_Pool-CV-Input-rescue)(type Legacy)(uri "${KIPRJMOD}/Project Symbols/Wave_Pool CV Input-rescue.lib")(options "")(descr ""))
+  (lib (name Eurorack)(type Legacy)(uri "${KIPRJMOD}/Project Symbols/Eurorack_Symbols/Eurorack_Symbols.lib")(options "")(descr ""))
+)

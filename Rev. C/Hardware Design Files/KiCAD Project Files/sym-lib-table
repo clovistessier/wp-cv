@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Eurorack_Symbols)(type Legacy)(uri ${KIPRJMOD}/PROJECT_SYMBOLS/Eurorack_Symbols/Eurorack_Symbols.lib)(options "")(descr ""))
+  (lib (name mcp3202)(type Legacy)(uri ${KIPRJMOD}/PROJECT_SYMBOLS/mcp3202.lib)(options "")(descr ""))
+  (lib (name W5500)(type Legacy)(uri ${KIPRJMOD}/PROJECT_SYMBOLS/W5500/W5500.lib)(options "")(descr ""))
+)
