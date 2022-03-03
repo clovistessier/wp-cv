@@ -5,6 +5,8 @@ MCP3008::MCP3008(uint8_t SS) : ss(SS), clkSpd(500000) {
         // init the instance of SPIClass attached to VSPI aka SPI3 (HSPI = SPI4)
     spi = new SPIClass(VSPI);
 
+    // spi = new SPIClass(HSPI);
+
     // init vspi with default pins
     // SCLK = 18, MISO = 19, MOSI = 23, SS = 5
     // alternatively route through GPIO pins of your choice

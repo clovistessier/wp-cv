@@ -1,8 +1,9 @@
 //MCP3208 Driver for ESP32
 #include "MCP3208.h"
 
-MCP3208::MCP3208(uint8_t SS) : ss(SS), clkSpd(500000) {
-        // init the instance of SPIClass attached to VSPI aka SPI3 (HSPI = SPI4)
+MCP3208::MCP3208(uint8_t SS) : ss(SS), clkSpd(500000)
+{
+    // init the instance of SPIClass attached to VSPI aka SPI3 (HSPI = SPI4)
     spi = new SPIClass(VSPI);
 
     // spi = new SPIClass(HSPI);
@@ -56,8 +57,8 @@ uint16_t MCP3208::readADC(uint8_t channel)
     uint8_t singleBit = (1 << 1);
     channel &= 0b00000111;
 
-    uint8_t buffer[] = {(uint8_t) (startBit | singleBit) | ((channel & 0b00000100) >> 2), 
-                        (uint8_t) ((channel & 0b00000011) << 6),
+    uint8_t buffer[] = {(uint8_t)(startBit | singleBit) | ((channel & 0b00000100) >> 2),
+                        (uint8_t)((channel & 0b00000011) << 6),
                         0};
 
     // Transfer the data to the ADC, the buffer is overwritten with the reading
